@@ -1,0 +1,114 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>1</groupId>
+	<artifactId>FileProject</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+	<!--	<properties>
+		<env>profilenameValue</env>
+	</properties>  -->
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.0.0-M5</version>
+				</plugin>
+
+
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-jar-plugin</artifactId>
+					<configuration>
+						<archive>
+							<manifest>
+								<addClasspath>true</addClasspath>
+								<mainClass>com.edi.FileProj.FileProgram</mainClass>
+							</manifest>
+						</archive>
+					</configuration>
+					<version>2.4</version>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+
+
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+	</build>
+
+
+	<!-- Profiles for different environments -->
+	<profiles>
+
+		<!-- Dev Environment Profile -->
+		<profile>
+			<id>dev</id>
+			<properties>
+				<env>dev</env>
+			</properties>
+			<build>
+				<finalName>${project.artifactId}-dev</finalName>
+			</build>
+		</profile>
+
+
+		<!-- Q/A Environment Profile -->
+
+		<profile>
+			<id>qa</id>
+			<properties>
+				<env>qa</env>
+			</properties>
+			<build>
+				<finalName>${project.artifactId}-qa</finalName>
+			</build>
+		</profile>
+
+
+		<!-- Production Environment Profile -->
+
+		<profile>
+			<id>prod</id>
+			<properties>
+				<env>prod</env>
+			</properties>
+			<build>
+				<finalName>${project.artifactId}-prod</finalName>
+
+			</build>
+		</profile>
+
+
+		<!-- User Acceptance Testing Environment Profile -->
+		<profile>
+			<id>uat</id>
+			<properties>
+				<env>uat</env>
+			</properties>
+			<build>
+				<finalName>${project.artifactId}-uat</finalName>
+
+			</build>
+		</profile>
+
+	</profiles>
+
+
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.13.2</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+</project>
