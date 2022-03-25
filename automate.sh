@@ -35,7 +35,8 @@ then
         git push origin "$4"
 
 else
-        git add "$3"
+#        git add "$3"
+        git add .
         git commit -m " "$3" file add to the git repository"
         git push origin "$4"
 
