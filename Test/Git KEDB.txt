@@ -1,4 +1,4 @@
-Q1)
+1)
 ERROR
 
  ! [rejected]        master -> master (fetch first)
@@ -15,8 +15,9 @@ try the commands :
 git pull --rebase origin master
 git push origin master
 
+-------------------------------------------------------------------------------------------------------------------------------------
 
-Q2) 
+2) 
 ERROR
 if you just use git push like below
 $ git push
@@ -33,6 +34,11 @@ SOLUTION
 Use
 git push origin master
 
+<<<<<<< HEAD
+--------------------------------------------------------------------------------------------------------------------------------------
+=======
+
+>>>>>>> 3670b7a4c9ac77e7217f378a2f53547dd2ed3961
 Q3) 
 ERROR
 Let's say I had a branch named coolbranch in my repository.
@@ -42,9 +48,6 @@ Now, I decided to delete it (both remotely and locally) with:
 git push origin :coolbranch
 git branch -D coolbranch
 Great! Now the branch is really deleted.
-
-TO DELETE THE BRANCH FROM REMOTE 
-git push origin --delete <remote-branch-name>
 
 But when I run
 
@@ -84,10 +87,47 @@ OUTPUT
 $ git branch -d -r origin/Newdev
 Deleted remote-tracking branch origin/Newdev (was ba033b1).
 
+<<<<<<< HEAD
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 Q4)error: Your local changes to the following files would be overwritten by checkout:
         Test/Git KEDB.txt
 Please commit your changes or stash them before you switch branches.
 Aborting
 
 SOLUTION
+
+use git add <filename>
 use git commit
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Q5)git merge --abort // to abort merging
+Q6)git fetch // used for fetching
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+Q7) ! [rejected]        Newchange -> Newchange (non-fast-forward)
+error: failed to push some refs to 'https://github.com/AritDas1997/MavenProject.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+SOLUTION
+
+git push origin <branch name> --force
+
+IN CASE OF MASTER 
+git push origin master --force
+=======
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+Q8) $ git pull
+Your configuration specifies to merge with the ref 'refs/heads/Newdev'
+from the remote, but no such ref was fetched.
+
+WW930+a835485@DESKTOP-0HH7C8V MINGW64 ~/eclipse-workspace/FileProject (Newdev)
+$ git pull origin Newdev
+fatal: couldn't find remote ref Newdev
+
+SOLUTION
+create remote repository
