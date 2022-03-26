@@ -32,12 +32,14 @@ if [[ "$3" == *"all" ]]
 then
         git add .
         git commit -m "Added all the files to git repository"
+	git pull origin "$4"
         git push origin "$4"
 
 else
 #        git add "$3"
         git add .
         git commit -m " "$3" file add to the git repository"
+	git pull origin "$4"
         git push origin "$4"
 
 fi

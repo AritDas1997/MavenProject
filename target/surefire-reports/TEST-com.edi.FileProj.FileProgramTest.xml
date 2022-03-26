@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.edi.FileProj.FileProgramTest" time="0.087" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.edi.FileProj.FileProgramTest" time="0.063" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="user.country" value="IN"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_321\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\a835485\AppData\Local\Temp\surefire1455324399772388944\surefirebooter7108394642298165552.jar C:\Users\a835485\AppData\Local\Temp\surefire1455324399772388944 2022-03-26T00-17-10_730-jvmRun1 surefire2928254506709133992tmp surefire_01378419739253659756tmp"/>
+    <property name="sun.java.command" value="C:\Users\a835485\AppData\Local\Temp\surefire4094210536630122160\surefirebooter7050379402969712259.jar C:\Users\a835485\AppData\Local\Temp\surefire4094210536630122160 2022-03-26T16-17-18_897-jvmRun1 surefire8117893558486467313tmp surefire_02702712388457732548tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\a835485\eclipse-workspace\FileProject\target\test-classes;C:\Users\a835485\eclipse-workspace\FileProject\target\classes;C:\Users\a835485\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\a835485\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\a835485"/>
@@ -31,7 +31,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\a835485\AppData\Local\Temp\surefire1455324399772388944\surefirebooter7108394642298165552.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\a835485\AppData\Local\Temp\surefire4094210536630122160\surefirebooter7050379402969712259.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_321\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_321\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_321\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
@@ -60,16 +60,16 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="test2" classname="com.edi.FileProj.FileProgramTest" time="0.009">
+  <testcase name="test2" classname="com.edi.FileProj.FileProgramTest" time="0.007">
     <system-out><![CDATA[Successfully wrote to the file.
 Arit
 ]]></system-out>
   </testcase>
-  <testcase name="test3" classname="com.edi.FileProj.FileProgramTest" time="0.014">
+  <testcase name="test3" classname="com.edi.FileProj.FileProgramTest" time="0.009">
     <system-out><![CDATA[Files in Java might be tricky.
 ]]></system-out>
   </testcase>
-  <testcase name="test4" classname="com.edi.FileProj.FileProgramTest" time="0.002"/>
+  <testcase name="test4" classname="com.edi.FileProj.FileProgramTest" time="0.003"/>
   <testcase name="FileCreationTest" classname="com.edi.FileProj.FileProgramTest" time="0.004">
     <system-out><![CDATA[The file already exists.
 ]]></system-out>
