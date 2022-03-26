@@ -10,16 +10,18 @@ git init
 if [[ "$4" == *"master" ]]
 then
         git checkout master
-        git pull origin master
+ #       git pull origin master
 if [[ "$3" == *"all" ]]
 then
         git add .
         git commit -m "Added all the files to git repository"
+	git pull origin master
         git push origin master
 else
         git add "$3"
         git commit -m " "$3" file add to the git repository"
-        git push origin master
+        git pull origin master
+	git push origin master
 
 fi
 
@@ -27,7 +29,7 @@ elif [[ "$4" != *"master" ]]
 then
         #git pull origin master
         git checkout -b "$4"
-        git pull origin "$4"
+#        git pull origin "$4"
 if [[ "$3" == *"all" ]]
 then
         git add .
