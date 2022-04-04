@@ -34,12 +34,12 @@ else
 
 fi
 
-elif [[ "$4" != *"master" ]]
+elif [[ "$c" != *"master" ]]
 then
         
         git checkout -b "$c"
 #       git pull origin "$c"
-if [[ "$3" == *"all" ]]
+if [[ "$d" == *"all" ]]
 then
         git add .
         git commit -m "Added all the files to git repository"
